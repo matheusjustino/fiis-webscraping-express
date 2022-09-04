@@ -15,7 +15,9 @@ export class LoadOneService implements LoadOne {
 				throw new BadRequestError('Nenhum parâmetro foi passado');
 			}
 
-			const browser = await this.pupService.launch({ headless: true });
+			const browser = await this.pupService.launch({
+				args: ['--no-sandbox', '--disable-setuid-sandbox'],
+			});
 			const page = await browser.newPage();
 
 			await page.goto(`${this.url}/${fiiCode}`, {
