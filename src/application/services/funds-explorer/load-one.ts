@@ -86,13 +86,14 @@ export class LoadOneService implements LoadOne {
 					if (!response.hasOwnProperty('indicators')) {
 						response.indicators = {};
 					}
-				}
 
-				Object.values(resp).forEach(
-					({ indicatorTitle, indicatorValue }) => {
-						response.indicators[indicatorTitle] = indicatorValue;
-					},
-				);
+					Object.values(resp).forEach(
+						({ indicatorTitle, indicatorValue }) => {
+							response.indicators[indicatorTitle] =
+								indicatorValue;
+						},
+					);
+				}
 			});
 
 		return response;
