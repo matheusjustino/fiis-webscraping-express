@@ -6,6 +6,6 @@ interface Env {
 }
 
 export const env: Env = {
-	port: Number(process.env.APP_PORT),
+	port: Number(process.env.PORT),
 	nodeEnv: process.env.NODE_ENV,
 };
