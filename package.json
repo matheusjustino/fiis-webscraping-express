@@ -44,6 +44,7 @@
 		"pino": "^8.4.2",
 		"puppeteer": "^17.1.0",
 		"reflect-metadata": "^0.1.13",
-		"tsyringe": "^4.7.0"
+		"tsyringe": "^4.7.0",
+		"pino-pretty": "^9.1.0"
 	}
 }
