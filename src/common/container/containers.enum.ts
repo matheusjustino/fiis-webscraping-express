@@ -1,0 +1,4 @@
+export enum ContainersEnum {
+	LIST_FIIS_SERVICE = 'LIST_FIIS_SERVICE',
+	LOAD_ONE_FII_SERVICE = 'LOAD_ONE_FII_SERVICE',
+}

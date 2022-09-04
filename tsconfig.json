@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"outDir": "dist",
+		"rootDirs": ["src"],
+		"target": "es2021",
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"baseUrl": "src",
+		"paths": {
+			"@/*": ["*"]
+		},
+		"strict": true,
+		"strictPropertyInitialization": false,
+		"noImplicitOverride": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"typeRoots": ["./node_modules/@types"]
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
