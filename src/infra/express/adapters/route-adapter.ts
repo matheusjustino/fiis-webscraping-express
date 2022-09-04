@@ -11,7 +11,9 @@ export const expressRouteAdapter: Adapter =
 			Logger.info(
 				`METHOD: ${req.method} - URL: ${
 					req.originalUrl
-				} - IP_REQUEST: ${req.ip} - HOST: ${
+				} - IP_REQUEST: ${
+					req.headers['x-forwarded-for'] || req.socket.remoteAddress
+				} - HOST: ${
 					req.hostname
 				} - DATE: ${new Date().toLocaleString()}`,
 			);
