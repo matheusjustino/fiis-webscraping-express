@@ -12,7 +12,7 @@ export class ListFiisService implements ListFiis {
 	public async listFiis(): Promise<ListFiis.Result> {
 		try {
 			const browser = await this.pupService.launch({
-				headless: true,
+				args: ['--no-sandbox', '--disable-setuid-sandbox'],
 			});
 			const page = await browser.newPage();
 
